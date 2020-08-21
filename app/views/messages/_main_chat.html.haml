@@ -1,0 +1,32 @@
+.Chat
+  .RightHeader
+    .RightHeader__group
+      .RightHeader__groupname
+        test
+      .RightHeader__memberlist
+        Member : aaa
+    = link_to "Edit", "#", class: "RightHeader__editbutton"
+  .MessageField
+    .Message__box
+      .Message__username
+        aaa
+      .Message__date
+        2020/08/20(Thu)06:30:34
+    .Message
+      おはよう
+    .Message__box
+      .Message__username
+        aaa
+      .Message__date
+        2020/08/20(Thu)22:30:26
+    .Message
+      おやすみ
+
+  .Footer
+    %form.Form
+      .Form__contents
+        %input{type: "text", placeholder:"type a message", class:"Form__inputcontent"}
+        %label{class: "Form__inputimage"}
+          = icon('far', 'image')
+          %input{type: "file", class:"Form__file"}
+      %input{type: "submit",value:"Send", class:"Form__submit"}
