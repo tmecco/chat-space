@@ -34,5 +34,13 @@ class GroupsController < ApplicationController
   def group_params
     params.require(:group).permit(:name, user_ids: [])
   end
-  
 end
+
+
+# モデルオプション
+# ①送信先のURLを自動生成・・・URLオプションの代わり
+# ②HTTPメソッドを決める（POSTかPATCH）・・・METHODオプションの代わり
+# ③すでにインスタンスに入っている内容をフォームに表示
+
+
+# ビューでデータ入力＝＞コントローラー＝＞ビューで表示
