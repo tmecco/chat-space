@@ -11,6 +11,7 @@ module ChatSpace
     # Initialize configuration defaults for originally generated Rails version.
     config.i18n.default_locale = :ja
     config.load_defaults 6.0
+    config.time_zone = 'Asia/Tokyo'
     config.generators do |g|
       g.stylesheets false
       g.javascripts false
